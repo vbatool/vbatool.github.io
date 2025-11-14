@@ -50,4 +50,118 @@ body.sticky-bottom-footer {
 * Projects
 *****************************************************************************/
 
-// TODO: redefine projects layout.
+// Defining project page design guidelines
+.project-featured {
+  margin-bottom: 3rem;
+}
+
+.featured-header {
+  max-width: 980px;
+  margin: 10rem auto 3rem; /* increased gap from top / nav */
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.featured-title {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 900;
+  font-size: 3.2rem; /* larger heading */
+  color: var(--global-title-color);
+  margin: 6rem 0 1rem;
+  letter-spacing: -.02em;
+}
+
+.featured-hr {
+  width: 60%;
+  margin: .5rem auto 1.5rem;
+  border: none;
+  border-top: 1px solid #e6e9ec;
+}
+
+.project-row {
+  gap: 1.5rem;
+  /* keep stacked by default (mobile) */
+  display: block;
+}
+
+/* Strong override to force horizontal project layout */
+.project-featured .project-row {
+  display: block !important;            /* stack by default (mobile) */
+  gap: 1rem !important;
+}
+
+@media (min-width: 768px) {
+  .project-featured .project-row {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    align-items: flex-start !important;
+    gap: 2rem !important;
+  }
+
+  /* target the exact bootstrap column elements used in the include */
+  .project-featured .project-row > .col-12.col-md-6:first-child {
+    flex: 0 0 48% !important;
+    max-width: 48% !important;
+  }
+
+  .project-featured .project-row > .col-12.col-md-6:last-child {
+    flex: 0 0 52% !important;
+    max-width: 52% !important;
+    padding-left: 1.5rem !important;
+  }
+
+  /* ensure media fills its column and text sits next to it */
+  .project-featured .project-row > .col-12.col-md-6:first-child .project-media,
+  .project-featured .project-row > .col-12.col-md-6:first-child .project-image {
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom: 0 !important;
+  }
+
+  .project-featured .project-row > .col-12.col-md-6:last-child .project-desc {
+    margin-top: 0 !important;
+  }
+}
+
+.project-media,
+.project-image {
+  border-radius: 4px;
+  box-shadow: 0 6px 20px rgba(12,20,34,0.06);
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.project-links {
+  margin-top: .75rem;
+  padding-left: 0;
+  list-style: none;
+}
+
+.project-link-item {
+  margin-bottom: .45rem;
+
+  a {
+    color: var(--accent, #6a0dad);
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.project-desc {
+  font-size: .95rem;
+  line-height: 1.7;
+  color: #6b7280;
+}
+//body.projects-page .page-header { display: none !important; }
+
+/* Responsive tweaks */
+@media (max-width: 767px) {
+  .featured-title { font-size: 1.9rem; } /* mobile adjustment */
+  .featured-hr { width: 80%; }
+  .project-row { gap: 1rem; }
+}

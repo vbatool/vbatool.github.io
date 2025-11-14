@@ -1,16 +1,14 @@
 ---
 layout: page
-title: project 1
+title: Participatory Design of Educational Tool to Address Weight Stigma in Healthcare
 description: with background image
-img: assets/img/12.jpg
+img: /assets/img/ctbh.png
 importance: 1
 category: work
 related_publications: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+This research explored how technology can improve the way Attention Deficit Hyperactivity Disorder (ADHD) is assessed. Traditional ADHD evaluations often take place in small, controlled environments, which may not fully capture a child’s natural behaviors. This study examined how sensor-based technology, like motion tracking and audio analysis, could help collect more accurate behavioral data in real-world settings. By combining technology with expert human decision-making, the research aimed to improve ADHD assessments and provide better insights into children’s attention and activity levels.
 
 To give your project a background in the portfolio page, just add the img tag to the front matter like so:
 
