@@ -165,3 +165,222 @@ body.sticky-bottom-footer {
   .featured-hr { width: 80%; }
   .project-row { gap: 1rem; }
 }
+
+/******************************************************************************
+ * Teaching
+ ******************************************************************************/
+
+.page[data-page="teaching"],
+.teaching {
+  .page-content {
+    /* your teaching styles here */
+
+  }
+  
+  .teaching-heading{
+    max-width: 980px;
+    margin: 10rem auto 3rem; /* increased gap from top / nav */
+    padding: 0 1rem;
+    text-align: center;
+  }
+}
+
+/*****************************************************************************
+* Service
+*****************************************************************************/
+
+.service-header {
+  max-width: 980px;
+  margin: 6.5rem auto 1.5rem;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.service-title {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 900;
+  font-size: 3.2rem; /* larger heading */
+  color: var(--global-title-color);
+  margin: 6rem 0 1rem;
+  letter-spacing: -.02em;
+}
+
+.service-hr {
+  width: 60%;
+  margin: .5rem auto 1.25rem;
+  border: none;
+  border-top: 1px solid #e6e9ec;
+}
+
+.service-intro {
+  max-width: 900px;
+  margin: 0 auto 3rem;
+  padding: 0 1rem;
+}
+
+.service-intro-text {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #5b6066;
+  letter-spacing: -.01em;
+}
+
+/* Service cards container */
+.service-cards {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Individual service card */
+.service-card {
+  background: transparent;
+  border-radius: 0;
+  padding: 2rem 2rem;
+  border: 1px solid #eef2f4;
+  transition: all .25s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card:hover {
+  box-shadow: none;
+  border-top-color: var(--accent, #6a0dad);
+  transform: none;
+}
+
+.service-icon {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.service-card-title {
+  font-family: Georgia, serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #1f2937;
+  margin: 0 0 .75rem;
+  letter-spacing: 0;
+}
+
+.service-card-desc {
+  font-size: .95rem;
+  line-height: 1.7;
+  color: #6b7280;
+  margin-bottom: 1.25rem;
+  flex-grow: 1;
+}
+
+.service-card-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-card-links li {
+  margin-bottom: .5rem;
+}
+
+.service-card-links a {
+  color: var(--accent, #6a0dad);
+  text-decoration: none;
+  font-weight: 600;
+  transition: .2s ease;
+}
+
+.service-card-links a:hover {
+  text-decoration: underline;
+}
+
+/* Service — force one card per row layout (stacked) */
+.service-cards {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.service-cards .row {
+  display: block; /* stack rows */
+}
+
+.service-cards .row > .col-12,
+.service-cards .row > .col-12.col-md-4 {
+  flex: 0 0 100% !important;
+  max-width: 100% !important;
+  width: 100% !important;
+  box-sizing: border-box;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* card spacing & visual tweaks for stacked layout */
+.service-card {
+  margin: 1.5rem 0;
+  padding: 2rem 2rem;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid #eef2f4;
+}
+
+/* keep icons and content aligned */
+.service-icon { margin-bottom: 1rem; }
+@media (min-width: 768px) {
+  .service-card { padding: 2.25rem 2.5rem; }
+}
+
+/* Strong overrides for Service page: one card per row, full-width content */
+.page, body {
+  /* ensure top-level page-level specificity */
+}
+
+/* Target service container very specifically */
+.page .service-cards,
+body .service-cards,
+.service-cards {
+  max-width: 900px !important;
+  margin: 0 auto !important;
+  padding: 0 1rem !important;
+}
+
+/* Force the row to stack (override bootstrap .row flex behavior) */
+.page .service-cards .row,
+.service-cards .row {
+  display: block !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* Make each column take full width */
+.page .service-cards .row > [class*="col-"],
+.service-cards .row > [class*="col-"] {
+  flex: 0 0 100% !important;
+  max-width: 100% !important;
+  width: 100% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* Card visuals for stacked layout */
+.page .service-card,
+.service-card {
+  margin: 1.75rem 0 !important;
+  padding: 2.25rem !important;
+  border-radius: 10px !important;
+  background: #ffffff !important;
+  border: 1px solid #eef2f4 !important;
+  box-shadow: 0 8px 28px rgba(12,20,34,0.04) !important;
+}
+
+/* make icons and title spacing consistent */
+.page .service-icon,
+.service-icon { margin-bottom: 1rem !important; }
+
+@media (min-width: 768px) {
+  .page .service-card,
+  .service-card {
+    padding-left: 2.5rem !important;
+    padding-right: 2.5rem !important;
+  }
+}
