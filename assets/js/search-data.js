@@ -23,12 +23,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "nav-teaching",
-          title: "Teaching",
-          description: "Materials for courses you taught. Replace this text with your description.",
+        },{id: "nav-service",
+          title: "Service",
+          description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/teaching/";
+            window.location.href = "/service/";
           },
         },{id: "post-a-post-with-plotly-js",
         
@@ -407,6 +407,9 @@ ninja.data = [{
           section: "News",},{id: "news-i-was-awarded-the-phillips-family-student-professional-development-internship-award-to-attend-cscw-24-as-a-student-volunteer-where-our-work-therapy-for-therapists-was-accepted",
           title: 'I was awarded the Phillips Family Student Professional Development Internship award to attend...',
           description: "",
+          section: "News",},{id: "news-presented-my-poster-on-co-designing-patient-facing-educational-tool-to-address-weight-stigma-at-the-3rd-annual-digital-health-summit-organised-by-center-for-technology-and-behavioral-health-dartmouth",
+          title: 'Presented my poster on co-designing patient-facing educational tool to address weight stigma at...',
+          description: "",
           section: "News",},{id: "news-i-passed-my-research-presentation-exam-rpe-and-officially-became-a-phd-candidate",
           title: 'I passed my Research Presentation Exam (RPE) and officially became a PhD candidate!...',
           description: "",
@@ -463,7 +466,7 @@ ninja.data = [{
         title: 'email',
         section: 'Socials',
         handler: () => {
-          window.open("mailto:%79%6F%75@%65%78%61%6D%70%6C%65.%63%6F%6D", "_blank");
+          window.open("mailto:%76%61%66%61%62%61%74%6F%6F%6C.%67%72@%64%61%72%74%6D%6F%75%74%68.%65%64%75", "_blank");
         },
       },{
         id: 'social-inspire',
