@@ -1,0 +1,177 @@
+:root {
+  --heather: #7a4988;
+  --lime: #74a969;
+  --lilac: #c8a2c8;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: 'Playfair Display', 'Playfair Display', Georgia, serif;
+  color: #111;
+  font-size: 0.82vw;
+  line-height: 1.75;
+}
+
+.container {
+  padding: 2vw 18vw 4vw 21vw;
+}
+
+/* Header */
+.site-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.8vw;
+  margin-bottom: 2.8vw;
+}
+
+.name {
+  font-size: 2.8vw;
+  font-weight: 700;
+  font-family: 'Playfair Display', Georgia, serif;
+  white-space: nowrap;
+  letter-spacing: -0.5px;
+}
+
+.topics {
+  padding-top: 1.4vw;
+  font-size: 0.8vw;
+  color: var(--lime);
+  font-family: 'Playfair Display', Georgia, serif;
+  line-height: 1.55;
+}
+
+/* Nav */
+.site-nav {
+  margin-left: auto;
+  margin-right: 2vw;
+  display: flex;
+  gap: 1.6vw;
+  align-items: flex-start;
+  padding-top: 1.6vw;
+  flex-shrink: 0;
+}
+
+.nav-link {
+  color: var(--heather);
+  text-decoration: none;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 0.85vw;
+  font-weight: 520;
+}
+
+.nav-link:hover {
+  opacity: 0.6;
+}
+
+/* Main two-column layout */
+.main-content {
+  display: flex;
+  gap: 8vw;
+  align-items: flex-start;
+}
+
+/* Bio */
+.bio {
+  flex: 1;
+  text-align: justify;
+}
+
+.bio p {
+  margin-bottom: 1.4em;
+}
+
+.bio a {
+  color: var(--heather);
+  text-decoration: underline;
+}
+
+.bio a:hover {
+  opacity: 0.7;
+}
+
+.bio strong {
+  color: var(--heather);
+}
+
+/* Sidebar */
+.sidebar {
+  width: 15vw;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.4vw;
+  padding-top: 3.5vw;
+}
+
+.profile-photo-wrapper {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #ccc;
+}
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.4vw;
+  white-space: nowrap;
+}
+
+.social-sep-star {
+  width: 0.44vw;
+  height: 0.44vw;
+  object-fit: contain;
+  vertical-align: middle;
+}
+
+.social-link {
+  color: var(--heather);
+  text-decoration: underline;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 0.7vw;
+}
+
+.social-link:hover {
+  opacity: 0.6;
+}
+
+/* CTA Buttons */
+.cta-buttons {
+  margin-top: 2vw;
+  display: flex;
+  gap: 0.85vw;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #111;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.7vw 1.75vw;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 0.8vw;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  transition: background-color 0.2s;
+}
+
+.btn:hover {
+  background-color: #333;
+}
