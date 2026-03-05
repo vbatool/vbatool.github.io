@@ -19,7 +19,7 @@ body {
 }
 
 .container {
-  padding: 2vw 18vw 4vw 21vw;
+  padding: 2vw 18vw 4vw 18vw;
 }
 
 /* Header */
@@ -136,17 +136,17 @@ body {
 }
 
 .social-sep-star {
-  width: 0.44vw;
-  height: 0.44vw;
+  width: 0.5vw;
+  height: 0.5vw;
   object-fit: contain;
   vertical-align: middle;
 }
 
 .social-link {
-  color: var(--heather);
+  color: var(--lime);
   text-decoration: underline;
   font-family: 'Playfair Display', Georgia, serif;
-  font-size: 0.78vw;
+  font-size: 0.85vw;
 }
 
 .social-link:hover {
