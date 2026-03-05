@@ -20,8 +20,6 @@ body {
 
 .container {
   padding: 2vw 18vw 4vw 21vw;
-  position: relative;
-  z-index: 1;
 }
 
 /* Header */
@@ -125,6 +123,8 @@ body {
   height: 100%;
   object-fit: cover;
   object-position: center top;
+  transform: scale(1.15);
+  transform-origin: center top;
 }
 
 .social-links {
